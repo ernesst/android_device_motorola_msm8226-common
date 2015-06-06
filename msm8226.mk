@@ -209,6 +209,11 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     Torch
 
+# Ubuntu Overlay Files
+PRODUCT_COPY_FILES += \
+    device/motorola/msm8226-common/ubuntu/display.conf:system/ubuntu/etc/ubuntu-touch-session.d/android.conf \
+    device/motorola/msm8226-common/ubuntu/70-falcon.rules:system/ubuntu/lib/udev/rules.d/70-android.rules
+
 # USB
 PRODUCT_PACKAGES += \
     com.android.future.usb.accessory

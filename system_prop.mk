@@ -92,6 +92,11 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.cwm.forbid_format=/fsg,/firmware,/persist,/boot
 
+#Ubuntu
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.hardware=qcom \
+    ro.product.device=falcon
+
 # Wifi
 PRODUCT_PROPERTY_OVERRIDES += \
     persist.sys.qc.sub.rdump.on=1 \
