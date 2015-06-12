@@ -169,6 +169,9 @@ ifneq ($(TARGET_BUILD_VARIANT),user)
     BOARD_SEPOLICY_UNION += su.te
 endif
 
+#Ubuntu
+BOARD_CUSTOM_UBUNTU_INITRD := device/motorola/msm8226-common/ubuntu-root/
+
 # Vold
 BOARD_VOLD_DISC_HAS_MULTIPLE_MAJORS := true
 BOARD_VOLD_EMMC_SHARES_DEV_MAJOR := true
