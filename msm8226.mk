@@ -242,5 +242,12 @@ PRODUCT_PACKAGES += \
     wcnss_service
 
 PRODUCT_COPY_FILES += \
-    kernel/motorola/msm8226/drivers/net/wireless/prima/firmware_bin/WCNSS_cfg.dat:system/etc/firmware/wlan/prima/WCNSS_cfg.dat \
-    kernel/motorola/msm8226/drivers/net/wireless/prima/firmware_bin/WCNSS_qcom_cfg.ini:system/etc/firmware/wlan/prima/WCNSS_qcom_cfg.ini
+    kernel/motorola/msm8226/drivers/staging/prima/firmware_bin/WCNSS_cfg.dat:system/etc/firmware/wlan/prima/WCNSS_cfg.dat \
+    kernel/motorola/msm8226/drivers/staging/prima/firmware_bin/WCNSS_qcom_cfg.ini:system/etc/firmware/wlan/prima/WCNSS_qcom_cfg.ini
+
+#WNCSS Workaround
+PRODUCT_COPY_FILES += \
+    device/motorola/msm8226-common/rootdir/etc/init_wlan.sh:root/system/etc/init_wlan.sh \
+    device/motorola/msm8226-common/rootdir/etc/init.falcon.wifi.sh:root/system/etc/init.falcon.wifi.sh \
+    device/motorola/msm8226-common/rootdir/etc/init_wlan.sh:system/etc/init_wlan.sh \
+    device/motorola/msm8226-common/rootdir/etc/init.falcon.wifi.sh:system/etc/init.falcon.wifi.sh
