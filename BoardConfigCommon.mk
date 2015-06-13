@@ -170,7 +170,7 @@ ifneq ($(TARGET_BUILD_VARIANT),user)
 endif
 
 #Ubuntu
-BOARD_CUSTOM_UBUNTU_INITRD := device/motorola/msm8226-common/ubuntu-root/
+#BOARD_CUSTOM_UBUNTU_INITRD := device/motorola/msm8226-common/ubuntu-root/
 
 # Vold
 BOARD_VOLD_DISC_HAS_MULTIPLE_MAJORS := true

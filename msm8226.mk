@@ -91,6 +91,10 @@ PRODUCT_PACKAGES += \
     charger \
     charger_res_images
 
+# Conn_INIT
+PRODUCT_PACKAGES += \
+	conn_init
+
 # CRDA
 PRODUCT_PACKAGES += \
     crda \
