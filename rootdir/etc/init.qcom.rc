@@ -625,9 +625,6 @@ on property:persist.radio.multisim.config=dsds
     start mmi-ril-daemon
     start mmi-ril-daemon1
 
-on property:vold.decrypt=trigger_restart_framework
-    stop rild
-
 service mmi-ril-daemon /system/bin/rild
     class main
     socket rild stream 660 root radio
